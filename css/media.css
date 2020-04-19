@@ -21,6 +21,10 @@
   .content-item{
      margin-bottom: 40px;
   }
+  .game-img-losing span{
+      top: 10vh;
+      left: 35vw;
+  }
 }
 @media (min-width: 768px) and (max-width: 1019px){
   a{
@@ -48,6 +52,10 @@
   .content-item{
      margin-bottom: 0px;
   }
+  .game-img-losing span{
+     top: 7vh;
+     left: 35vw;
+}
 }
 
 
