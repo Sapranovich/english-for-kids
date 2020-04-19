@@ -241,9 +241,9 @@ a{
 }
 .game-img-losing span{
     position: absolute;
-    top: 20vh;
-		left: 45vw;
-		font-size: 35px;
+    top: 15vh;
+    left: 45vw;
+    font-size: 35px;
 }
 .game-img-losing img,
 .game-img-victory img{
