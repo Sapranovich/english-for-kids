@@ -34,5 +34,4 @@ MENUSTART();
 BurgerMenuNav[0].style.background = '#395f37';
 WorkMenuStartWindow();
 CardsMenuWork(cards, TRAINING_MODE);
-
 export { MENUSTART };
