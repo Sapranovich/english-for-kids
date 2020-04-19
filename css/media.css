@@ -1,0 +1,103 @@
+@media (min-width: 1020px)and (max-width: 1440px){
+  a{
+    margin-bottom: 5px;
+  }
+  .container1{
+    width: 1020px;
+    padding: 0 20px;
+  }
+  .burger-menu-list {
+    padding-top: 110px;
+
+  }
+  .burger-menu-inner{
+    width: 35vw;
+  }
+  .content-inner{
+    justify-content: space-around;
+  }
+  .content-item-game,
+  .content-item-menu,
+  .content-item{
+     margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1019px){
+  a{
+    margin-bottom: 5px;
+  }
+  #heading{
+    transform: translateX(29%);
+  }
+  .container1{
+    width: 768px;
+    padding: 0 20px;
+  }
+  .burger-menu-list {
+    padding-top: 110px;
+  }
+  .burger-menu-inner{
+    width: 50vw;
+  }   
+  .content-inner{
+    justify-content: space-around;
+    height: 1200px;
+  }
+  .content-item-game,
+  .content-item-menu,
+  .content-item{
+     margin-bottom: 0px;
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px){
+  a{
+    margin-bottom: 5px;
+  }
+  .container1{
+    width: 320px;
+    padding: 0 10px;
+  }
+  .header{
+    margin-bottom: 45px;
+  }
+  #heading {
+    text-align: center;
+    transform: translateX(-25%);
+    width: 320px;
+    position: absolute;
+    top: 100px;
+}
+  .header-burger-menu{
+    margin-left: 20px;
+  }
+  .burger-menu-list {
+    padding-top: 110px;
+  }
+  .burger-menu-inner{
+    width: 100vw;
+  }   
+  .content-inner{
+    justify-content: space-between;
+  }
+  .counter-item {
+    width: 44px;
+  }
+  .content-item-game,
+  .content-item-menu,
+  .content-item{
+     margin-bottom: 40px;
+  }
+  .game-start-btn{
+    padding: 0px 94px;
+  }
+  .game-img-losing img, .game-img-victory img {
+    transform: translateX(-10%);
+    margin-top: 10vh;
+}
+.game-img-losing span{
+  top: 5vh;
+  left: 35vw;
+}
+}
