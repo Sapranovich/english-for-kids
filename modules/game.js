@@ -22,7 +22,8 @@ function CardsGameWork() {
     return arrayAudi;
   }
   function shuffle(arr) {
-    let j; let temp;
+    let j; 
+    let temp;
     for (let i = arr.length - 1; i > 0; i--) {
       j = Math.floor(Math.random() * (i + 1));
       temp = arr[j];
@@ -36,23 +37,33 @@ function CardsGameWork() {
     sound.src = array[i];
     sound.play();
   }
+  function DeleteCount(){
+      let NumberStar = document.querySelectorAll('.counter-item');
+      if(NumberStar.length > 8){
+        NumberStar[0].remove();
+        //  NumberStar.splice(0,1);
+      }
+  }
   function Game(array, i) {
     let errors = 0;
     document.onclick = function (event) {
       if (event.target.classList.value == 'content-item-game') {
         if (event.target.lastElementChild.getAttribute('src') == array[i] && i < array.length - 1) {
           document.querySelector('.counter-items').innerHTML += CounterTrue();
+          DeleteCount();
           document.querySelectorAll('.content-item-game .shadow')[event.target.getAttribute('data') - 1].style.display = 'inline-block';
           i++;
           PlayAudio(array, i);
         } else if (i < array.length - 1) {
           document.querySelector('.counter-items').innerHTML += CounterFalse();
+          DeleteCount();
           errors += 1;
         } else {
           document.querySelector('.game-repeat-btn').style.display = 'none';
           document.querySelectorAll('.content-item-game .shadow')[event.target.getAttribute('data') - 1].style.display = 'inline-block';
           Result(errors);
           MENUSTART();
+          DeleteCount();
           i = 0;
         }
       } else if (event.target.classList.value == 'game-repeat-btn') {

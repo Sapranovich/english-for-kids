@@ -28,6 +28,7 @@ function LosingNone() {
 }
 function PlayAudioGame(i, ERRORS) {
   const sound = document.createElement('audio');
+  const TimerHidingResultGame = 2000;
   switch (i) {
     case 0:
       sound.src = './audio/error.mp3';
@@ -41,14 +42,14 @@ function PlayAudioGame(i, ERRORS) {
       document.querySelector('.game-img-victory').style.display = 'block';
       sound.src = './audio/success.mp3';
       sound.play();
-      setTimeout(VictoryNone, 2000);
+      setTimeout(VictoryNone, TimerHidingResultGame);
       break;
     case 3:
       document.querySelector('.game-img-losing').style.display = 'block';
       document.querySelector('.game-img-losing span').innerHTML = `${ERRORS} - Error(s)!!!`;
       sound.src = './audio/failure.mp3';
       sound.play();
-      setTimeout(LosingNone, 2000);
+      setTimeout(LosingNone, TimerHidingResultGame);
       break;
   }
 }

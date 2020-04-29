@@ -55,7 +55,7 @@
   .game-img-losing span{
      top: 7vh;
      left: 30vw;
-}
+  }
 }
 
 
@@ -68,7 +68,8 @@
     padding: 0 10px;
   }
   .header{
-    margin-bottom: 75px;
+    margin-bottom: 45px;
+    padding-bottom: 30px;
   }
   #heading {
     text-align: center;
@@ -88,9 +89,6 @@
   }   
   .content-inner{
     justify-content: space-between;
-  }
-  .counter-item {
-    width: 44px;
   }
   .content-item-game,
   .content-item-menu,

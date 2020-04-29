@@ -4,9 +4,11 @@
 /* eslint-disable no-param-reassign */
 function MenuKonstr(ObjCards) {
   let out = '<div class="burger-menu-list"><nav class="nav flex-column">';
-  for (let i = 0; i < ObjCards[0].length; i++) {
+  let i=0;
+  ObjCards[0].forEach((e)=>{
     out += `<a class="nav-link" href="#" data = "${i}"> ${ObjCards[0][i]} </a>`;
-  }
+    i++;
+  });
   out += '</nav></div>';
   return out;
 }

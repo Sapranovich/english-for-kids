@@ -54,17 +54,19 @@ function CardsTrainWork() {
   const A = document.querySelectorAll('.content-item-start');
   const B = document.querySelectorAll('.content-item-end');
   const CONTENT = document.querySelector('.content-inner');
+  const TimerAnimationRotation = 350;
+  const TimerStartTrackingCursor = 400;
   let Data;
   function TimeOutB() {
-    B[Data].classList.add('antiActive');
+    B[Data].classList.add('passive');
   }
   function TimeOutA() {
     A[Data].classList.remove('active');
   }
   function TimeOutMouseOut() {
     B[Data].addEventListener('mouseleave', () => {
-      B[Data].classList.remove('antiActive');
-      setTimeout(TimeOutA, 350);
+      B[Data].classList.remove('passive');
+      setTimeout(TimeOutA, TimerAnimationRotation);
     });
   }
   CONTENT.onclick = function (event) {
@@ -72,8 +74,8 @@ function CardsTrainWork() {
     if (target.tagName == 'IMG') {
       Data = target.closest('.content-item').getAttribute('data');
       A[Data].classList.add('active');
-      setTimeout(TimeOutB, 350);
-      setTimeout(TimeOutMouseOut, 400);
+      setTimeout(TimeOutB, TimerAnimationRotation);
+      setTimeout(TimeOutMouseOut, TimerStartTrackingCursor);
     }
   };
 }
