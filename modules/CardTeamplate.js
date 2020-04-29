@@ -23,8 +23,9 @@ function CardsTrain(ObjCards, N, K) {
     <div class="content-item-start-word">
     ${ObjCards[N][K].word}  
     </div>
-    <div class="content-item-btn">
-    <img src="img/DownArrows.svg" alt="">
+    <div class="content-item-btn" >
+    <img src="img/DownArrows.svg" alt="" onclick="document.getElementById('WOTER').play()">
+    <audio id="WOTER" src="audio/WOTER.mp3"></audio>
     </div>
   </div>
     </div>
